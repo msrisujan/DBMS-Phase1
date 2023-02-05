@@ -1,0 +1,58 @@
+ body{
+    background-color: #000;
+    color: #fff;
+    /* Third Colour: #49c5b6 */
+    font-family: 'League Spartan', sans-serif;
+    /* font-family: 'Roboto Slab', serif; */
+}
+
+/* Intro */
+
+#intro{
+    padding: 5% 10%;
+    font-family: 'Roboto Slab', serif;
+}
+
+.intro-heading{
+    color: #66FcF1;
+    font-size: 5rem;
+    font-weight: 900;
+    padding-top: 10rem;
+}
+
+.nav-brand{
+    color: #66FcF1;
+    cursor:default;
+}
+
+.nav-brand:hover{
+    color: #66FcF1;
+    cursor:default;
+}
+
+.nav-link-color{
+    color: #66FcF1;
+}
+
+.nav-link-color:hover{
+    color: #fff;
+}
+
+.profile-pic{
+    width: 20rem;
+    position: relative;
+    top: 15%;
+}
+
+.profile-pic-box{
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+/* Education */
+
+#education{
+    padding: 7% 15%;
+    background-color: #49c5b6;
+    color: #000;
+}
