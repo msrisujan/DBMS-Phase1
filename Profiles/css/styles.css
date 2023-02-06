@@ -49,10 +49,35 @@
     margin-bottom: 10%;
 }
 
-/* Education */
+/* About Me */
 
-#education{
+#about-me{
+
+}
+
+/* Skills */
+
+#skills{
     padding: 7% 15%;
+}
+
+/* Contact Me */
+
+.btn-look{
+    color: #66FcF1;
+}
+
+.contact-me-text{
+    padding: 7% 15% 2% 15%;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 2rem;
+    font-weight: 600;
     background-color: #49c5b6;
     color: #000;
+}
+
+.footer{
+    text-align: center;
+    padding: 2%;
 }
