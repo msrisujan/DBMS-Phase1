@@ -6,6 +6,13 @@
     /* font-family: 'Roboto Slab', serif; */
 }
 
+.sub-heading{
+    font-family: 'Roboto Slab', serif;
+    color: #66FcF1;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
 /* Intro */
 
 #intro{
@@ -42,6 +49,7 @@
     width: 20rem;
     position: relative;
     top: 15%;
+    border-radius: 50%;
 }
 
 .profile-pic-box{
@@ -49,16 +57,38 @@
     margin-bottom: 10%;
 }
 
+.profile-pic-vishnu{
+    transform: scale(1);
+}
+
 /* About Me */
 
 #about-me{
-
+    padding: 7% 10% 2% 10%;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.5rem;
+    color: #fff;
 }
 
-/* Skills */
+/* Skills and Projects */
 
-#skills{
-    padding: 7% 15%;
+#skills-and-projects{
+    padding: 5% 10%;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.skills-col{
+    padding-top: 5%;
+    padding-left: 0%;
+    font-size: 1.5rem;
+}
+
+.skills-img{
+    height: 75%;
+    text-align: center;
+    padding: 5%;
 }
 
 /* Contact Me */
@@ -68,13 +98,12 @@
 }
 
 .contact-me-text{
-    padding: 7% 15% 2% 15%;
+    padding: 5% 10% 2% 10%;
     text-align: center;
     line-height: 1.5;
     font-size: 2rem;
     font-weight: 600;
-    background-color: #49c5b6;
-    color: #000;
+    color: #fff;
 }
 
 .footer{
