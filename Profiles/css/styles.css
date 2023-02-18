@@ -57,12 +57,11 @@
 /* About Me */
 
 #about-me{
-    padding: 7% 15% 2% 15%;
+    padding: 7% 10% 2% 10%;
     text-align: left;
     line-height: 1.5;
     font-size: 1.5rem;
-    background-color: #49c5b6;
-    color: #000;
+    color: #fff;
 }
 
 .skills-img{
@@ -74,7 +73,7 @@
 /* Projects */
 
 #my-projects{
-    padding: 7% 15%;
+    padding: 5% 10%;
 }
 
 /* Contact Me */
@@ -84,13 +83,12 @@
 }
 
 .contact-me-text{
-    padding: 7% 15% 2% 15%;
+    padding: 7% 10% 2% 10%;
     text-align: center;
     line-height: 1.5;
     font-size: 2rem;
     font-weight: 600;
-    background-color: #49c5b6;
-    color: #000;
+    color: #fff;
 }
 
 .footer{
