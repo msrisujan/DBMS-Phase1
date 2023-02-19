@@ -308,7 +308,9 @@
 .pop:nth-child(29){
     animation-delay: 2.9s;
 }
-
+.pop:nth-child(30){
+    animation-delay: 3.0s;
+}
 
 @keyframes popup{
     0%{
