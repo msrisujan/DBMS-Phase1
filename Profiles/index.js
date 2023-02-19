@@ -19,7 +19,7 @@ function jiggle(letter) {
 const popping = document.querySelectorAll('.abo');
 window.addEventListener('scroll', () => {
     popping.forEach(pop => {
-        if (pop.getBoundingClientRect().top < (window.innerHeight)) {
+        if (pop.getBoundingClientRect().top < (window.innerHeight) && pop.classList.contains('abo')) {
             pop.classList.add('pop');
         }
     });
