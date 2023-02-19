@@ -19,7 +19,7 @@ function jiggle(letter) {
 const popping = document.querySelectorAll('.abo');
 window.addEventListener('scroll', () => {
     popping.forEach(pop => {
-        if (pop.getBoundingClientRect().top < (window.innerHeight) && !pop.classList.contains('abo')) {
+        if (pop.getBoundingClientRect().top < (window.innerHeight)) {
             pop.classList.add('pop');
         }
     });
@@ -28,7 +28,7 @@ window.addEventListener('scroll', () => {
 const sliding = document.querySelectorAll('.sk');
 window.addEventListener('scroll', () => {
     sliding.forEach(slideup => {
-        if (slideup.getBoundingClientRect().top < (window.innerHeight/4*3)  && !slideup.classList.contains('sk')) {
+        if (slideup.getBoundingClientRect().top < (window.innerHeight/4*3)) {
             slideup.classList.add('slideup');
         }
     });
