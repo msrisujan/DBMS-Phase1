@@ -19,7 +19,7 @@ function jiggle(letter) {
 const popping = document.querySelectorAll('.abo');
 window.addEventListener('scroll', () => {
     popping.forEach(pop => {
-        if (pop.getBoundingClientRect().top < (window.innerHeight) && pop.classList.contains('abo')) {
+        if (pop.getBoundingClientRect().top < (window.innerHeight) && !pop.classList.contains('abo')) {
             pop.classList.add('pop');
         }
     });
@@ -28,11 +28,29 @@ window.addEventListener('scroll', () => {
 const sliding = document.querySelectorAll('.sk');
 window.addEventListener('scroll', () => {
     sliding.forEach(slideup => {
-        if (slideup.getBoundingClientRect().top < (window.innerHeight/4*3)) {
+        if (slideup.getBoundingClientRect().top < (window.innerHeight/4*3)  && !slideup.classList.contains('sk')) {
             slideup.classList.add('slideup');
         }
     });
 });
+
+jQuery(document).ready(function($) {
+      var alterClass = function() {
+        var ww = document.body.clientWidth;
+        if (ww < 992) {
+          $('.abo').addClass('pop');
+        } 
+        if (ww < 992) {
+            $('.sk').addClass('slideup');
+          }
+      };
+      $(window).resize(function(){
+        alterClass();
+      });
+      alterClass();
+    });
+
+
 const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
 
