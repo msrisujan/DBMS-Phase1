@@ -94,6 +94,7 @@
     padding: 5% 10%;
     text-align: left;
     font-size: 1.5rem;
+    margin-bottom: 0;
 }
 
 .skills-col{
@@ -106,13 +107,15 @@
     height: 75%;
     text-align: center;
     padding: 5%;
+    padding-bottom: 0;
 }
 
 /* Contact Me */
-
 .btn-look{
     color: #66FcF1;
+    padding: 5%;
 }
+
 
 .contact-me-text{
     padding: 5% 10% 2% 10%;
@@ -121,6 +124,69 @@
     font-size: 2rem;
     font-weight: 600;
     color: #fff;
+}
+
+.or{
+    text-align: center;
+    padding: 15% 0%;
+    font-size: 1.75rem;
+}
+
+.contact-form{
+    padding: 5%;
+    padding-top: 0%;
+}
+
+.input-box{
+    margin: 2%;
+}
+
+.input-box input,
+.input-box textarea{
+    position: relative;
+    width: 100%;
+    padding: 1%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+.send-msg{  
+    text-align: center;
+}
+.btn1{
+    border: 1px solid #08fdd8;
+    background: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 10px;
+    color: #08fdd8;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+}
+.btn1:hover{
+    color: #000;
+}
+.btn1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #08fdd8;
+    z-index: -1;
+    transition: 0.8s;
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+.btn1:hover::before{
+    height: 180%;
+}
+.copyright{
+    text-align: center;
 }
 
 .footer{
@@ -239,7 +305,12 @@
 .pop:nth-child(28){
     animation-delay: 2.8s;
 }
-
+.pop:nth-child(29){
+    animation-delay: 2.9s;
+}
+.pop:nth-child(30){
+    animation-delay: 3.0s;
+}
 
 @keyframes popup{
     0%{
@@ -307,13 +378,18 @@
 .abo{
     opacity: 0;
 }
-#about-me h1,#skills-and-projects h1{
+#about-me h1,#skills-and-projects h1,#contact-me h1{
     color: #08fdd8;
     font-size: 4.3rem;
     line-height: 85px;
     letter-spacing: -10px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+}
+#contact-me h1{
+    position: relative;
+    left: 35%;
+    padding-bottom: 10px;
 }
 
 .sk{
@@ -343,4 +419,5 @@
     top: 0;
     right: 0;
     position: fixed;
+    z-index: -1;
 }
