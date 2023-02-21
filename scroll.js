@@ -1,5 +1,5 @@
 $(window).on("load",function(){
-    $(".loader").fadeOut(3000);
+    $(".loader").fadeOut(5000);
 });
 
 const leftboxes = document.querySelectorAll('.box1');
