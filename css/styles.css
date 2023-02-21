@@ -4,6 +4,99 @@ body {
     overflow-x: hidden;
 }
 
+.loader{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+}
+
+.logo{
+    transform: scale(0.5);
+    position: absolute;
+    left: 33%;
+    animation: comeup 1s linear forwards;
+}
+@keyframes comeup{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.loading{
+    color: #fff;
+    animation: blinking 1.5s linear infinite;
+    position: absolute;
+    top: 63%;
+    left: 47%;
+}
+@keyframes blinking{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+
+.ring{
+    width: 200px;
+    height: 200px;
+    border: 0px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 43%;
+}
+
+.ring:nth-child(2){
+    border-bottom-width: 8px;
+    border-color: rgba(255,0,255);
+    animation: rotate1 2s linear infinite;
+}
+.ring:nth-child(3){
+    border-right-width: 8px;
+    border-color: rgba(0,247,255);
+    animation: rotate2 2s linear infinite;
+}
+.ring:nth-child(4){
+    border-top-width: 8px;
+    border-color: rgba(0,255,13);
+    animation: rotate3 2s linear infinite;
+}
+@keyframes rotate1{
+    0%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+@keyframes rotate2{
+    0%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+    }
+}
+@keyframes rotate3{
+    0%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+    100%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
 .card-title{
     color: #000
 }

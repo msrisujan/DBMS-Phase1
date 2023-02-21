@@ -1,3 +1,7 @@
+$(window).on("load",function(){
+    $(".loader").fadeOut("slow");
+});
+
 const leftboxes = document.querySelectorAll('.box1');
 window.addEventListener('scroll', () => {
     leftboxes.forEach(leftbox => {
@@ -54,36 +58,6 @@ cursorscale.forEach(link => {
         cursor.classList.remove("grow");
     });
 });
-
-// cursorscale2=document.querySelectorAll(".team-heading");
-// cursorscale2.forEach(link => {
-//     link.addEventListener("mouseover", () => {
-//         cursor.classList.add("grow");
-//     });
-//     link.addEventListener("mouseleave", () => {
-//         cursor.classList.remove("grow");
-//     });
-// });
-
-// cursorscale3=document.querySelectorAll("i");
-// cursorscale3.forEach(link => {
-//     link.addEventListener("mouseover", () => {
-//         cursor.classList.add("grow");
-//     });
-//     link.addEventListener("mouseleave", () => {
-//         cursor.classList.remove("grow");
-//     });
-// });
-
-// cursorscale4=document.querySelectorAll(".nav-link");
-// cursorscale4.forEach(link => {
-//     link.addEventListener("mouseover", () => {
-//         cursor.classList.add("grow");
-//     });
-//     link.addEventListener("mouseleave", () => {
-//         cursor.classList.remove("grow");
-//     });
-// });
 
 
 const crew = document.querySelectorAll('.team-heading');
