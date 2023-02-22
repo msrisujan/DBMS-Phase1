@@ -19,13 +19,13 @@
     stroke:rgb(18, 222, 198);
     stroke-width:25px;
     stroke-dashoffset:0;
-    stroke-dasharray:10000;
+    stroke-dasharray:40000;
     animation:tree 8s ease-in-out}
   
     @keyframes tree{
       0%
       {
-        stroke-dashoffset:10000;
+        stroke-dashoffset:40000;
       }
   
       100%
