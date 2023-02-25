@@ -34,6 +34,15 @@ window.addEventListener('scroll', () => {
     });
 });
 
+const sli = document.querySelectorAll('.wall');
+window.addEventListener('scroll', () => {
+    sli.forEach(slideup => {
+        if (slideup.getBoundingClientRect().top < (window.innerHeight/4*3)) {
+            slideup.classList.add('box-appear');
+        }
+    });
+});
+
 jQuery(document).ready(function($) {
       var alterClass = function() {
         var ww = document.body.clientWidth;
