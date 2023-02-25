@@ -24,7 +24,33 @@ window.addEventListener('scroll', () => {
         }
     });
 });
-
+const skills = document.querySelectorAll('.skills');
+window.addEventListener('scroll', () => {
+    skills.forEach(pop => {
+        if (pop.getBoundingClientRect().top < (window.innerHeight/4*3) ) {
+            pop.classList.add('skill');
+            pop.classList.add('skills1');
+        }
+    });
+});
+const soc = document.querySelectorAll('.soc');
+window.addEventListener('scroll', () => {
+    soc.forEach(pop => {
+        if (pop.getBoundingClientRect().top < (window.innerHeight/4*3) ) {
+            pop.classList.add('con');
+            pop.classList.add('soc1');
+        }
+    });
+});
+const details = document.querySelectorAll('.details');
+window.addEventListener('scroll', () => {
+    details.forEach(pop => {
+        if (pop.getBoundingClientRect().top < (window.innerHeight/4*3) ) {
+            pop.classList.add('about');
+            pop.classList.add('details1');
+        }
+    });
+});
 const sliding = document.querySelectorAll('.sk');
 window.addEventListener('scroll', () => {
     sliding.forEach(slideup => {
@@ -38,7 +64,7 @@ jQuery(document).ready(function($) {
       var alterClass = function() {
         var ww = document.body.clientWidth;
         if (ww < 992) {
-          $('.abo').addClass('pop');
+          $('.details').addClass('about');
         } 
         if (ww < 992) {
             $('.sk').addClass('slideup');
