@@ -5,10 +5,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/sucheta_style.css">
+  <link rel="stylesheet" href="/css/sucheta_style.css">
+  <link rel="stylesheet" media="screen and (max-width:1200px)" href="/css/sucheta_stylesheetresponsive.css">
+  <link rel="stylesheet" media="screen and (max-width:700px)" href="/css/sucheta_stylesheetresponsive.css">
+  <script src="index.js"></script>
 </head>
 <body>
-  
 <nav class="navbar">
   <ul>
     <li>
@@ -18,7 +20,7 @@
       <a href="#skills">Skills</a>
       <a href="#hobbies">Experience</a>
       <a href="#achievements">Achievements</a>
-      <a href="#contact">Contact Me</a>
+      <a href="#contact">Contact</a>
     </li>
   </ul>
 </nav>
@@ -1223,11 +1225,13 @@ c13 -19 23 -68 13 -68 -4 0 -101 -37 -142 -55 l-40 -17 56 58 c31 33 61 69 68
 -2 -164z"/>
 </g>
 </svg>
+
 <section id="home">
   <div class="main">
     <h1 class="headings">Sucheta <br> Vadakkepat</h1>
   </div>
   </section>
+<br>
 <section id="about">
   <h1 class="introheadings">About Me</h1>
 
@@ -1244,6 +1248,7 @@ c13 -19 23 -68 13 -68 -4 0 -101 -37 -142 -55 l-40 -17 56 58 c31 33 61 69 68
   </div>
 
   </section>
+<br>
   <section id="education">
     <h1 class="introheadings">Education</h1>
     <div class="row">
@@ -1270,6 +1275,7 @@ c13 -19 23 -68 13 -68 -4 0 -101 -37 -142 -55 l-40 -17 56 58 c31 33 61 69 68
         </div>
     </div>
   </section>
+<br>
 <section id="hobbies">
     <h1 class="introheadings">Experience</h1>
     <div class="container">
@@ -1315,6 +1321,7 @@ c13 -19 23 -68 13 -68 -4 0 -101 -37 -142 -55 l-40 -17 56 58 c31 33 61 69 68
        </p>
     </div>
 </section>
+<br>
 <section id="skills">
   <h1 class="introheadings">Skills</h1>
   <div class="skillborder">
@@ -1326,6 +1333,7 @@ c13 -19 23 -68 13 -68 -4 0 -101 -37 -142 -55 l-40 -17 56 58 c31 33 61 69 68
   </div>
   
 </section>
+<br>
 <section id="achievements">
   <h1 class="introheadings">Achievements</h1>
   <div class="rectangle">
@@ -1338,19 +1346,38 @@ c13 -19 23 -68 13 -68 -4 0 -101 -37 -142 -55 l-40 -17 56 58 c31 33 61 69 68
     <svg><rect></rect></svg>
     <p>Received academic proficiencies</p>
     <svg><rect></rect></svg>
-    <p>Volunteered in techfest,cleanup drives and other events</p>
+    <p>Volunteered in techfest,cleanup drives and other programs</p>
+    <svg><rect></rect></svg>
+    <p>Participated in Samarpann and other musical events</p>
     
   </div>
   
 </section>
+<br>
 <section id="contact">
   <h1 class="contactheading">Contact Me</h1>
-  <form action="" class="form">
+  <div class="contactcontainer">
+    
+    <div class="contactinfo">
+      <div class="contactbox">       
+        <h2>Let's work together to create more fun stuff:)</h2>
+      </div>      
+    </div>
+  </div>
+  <div class="form section">
+    
+    <form action="" class="form">
     <input type="text" name="name" class="input" placeholder="Enter Your Name" >
+    <span>Name</span>
     <input type="email" name="email" class="input" placeholder="Enter Your Email">
+    <span>Email ID</span>
     <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter Your Message"></textarea>
+    <span>Message</span>
     <input type="submit" value="SEND" id="send">
+  </div>  
+    
   </form>
+  
 </section>
 <br>
 <br>
@@ -1367,7 +1394,5 @@ c13 -19 23 -68 13 -68 -4 0 -101 -37 -142 -55 l-40 -17 56 58 c31 33 61 69 68
   <br>
   <p>&copy; DBMS Phase-1 Project | Web Voyagers | Sucheta Vadakkepat</p>
 </footer>
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
