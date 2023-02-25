@@ -5,6 +5,16 @@
     font-family: 'League Spartan', sans-serif;
     /* font-family: 'Roboto Slab', serif; */
     overflow-x: hidden;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+}
+html{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
 }
 
 #Image_1{
@@ -37,7 +47,7 @@
 
 .sub-heading{
     font-family: 'Roboto Slab', serif;
-    color: #66FcF1;
+    color: #08fdd8;
     font-size: 2rem;
     font-weight: 600;
 }
@@ -50,51 +60,37 @@
 }
 
 .intro-heading{
-    color: #66FcF1;
+    color: #08fdd8;
     font-size: 5rem;
     font-weight: 900;
     padding-top: 10rem;
 }
-
 .nav-brand{
-    color: #66FcF1;
+    color: #08fdd8;
     cursor:default;
 }
 
 .nav-brand:hover{
-    color: #66FcF1;
+    color: #08fdd8;
     cursor:default;
 }
 
 .nav-link-color{
-    color: #66FcF1;
+    color: #08fdd8;
 }
 
 .nav-link-color:hover{
     color: #fff;
 }
 
-.profile-pic{
-    width: 20rem;
-    position: relative;
-    top: 15%;
-    border-radius: 50%;
-}
 
-.profile-pic-box{
-    text-align: center;
-    margin-bottom: 10%;
-}
 
-.profile-pic-vishnu{
-    transform: scale(1);
-}
 
 .caption{
     opacity: 0;
     animation: appear 3s forwards;
     animation-delay: 2.5s;
-    color: #66FcF1;
+    color: #08fdd8;
 }
 
 @keyframes appear{
@@ -109,7 +105,7 @@
 /* About Me */
 
 #about-me{
-    padding: 7% 10% 2% 10%;
+    padding: 0% 10% 10% 10%;
     text-align: left;
     line-height: 1.5;
     font-size: 1.5rem;
@@ -126,7 +122,6 @@
 }
 
 .skills-col{
-    padding-top: 5%;
     padding-left: 0%;
     font-size: 1.5rem;
 }
@@ -137,11 +132,24 @@
     padding: 5%;
     padding-bottom: 0;
 }
+.skills-content1{
+    position: relative;
+    top: 15%;
+}
 
+.profile-pic{
+    width: 20rem;
+    position: relative;
+    top: 15%;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 1.3;
+}
 /* Contact Me */
 .btn-look{
-    color: #66FcF1;
+    color: #08fdd8;
     padding: 5%;
+    scale: 2;
 }
 
 
@@ -423,7 +431,9 @@
 .sk{
     opacity: 0;
 }
-
+.sk1{
+    opacity: 0;
+}
 .slideup{
     opacity: 0;
     animation: slideup 2s forwards;
@@ -438,6 +448,36 @@
         translate: none;
     }
 }
+.slideleft{
+    opacity: 0;
+    animation: slideleft 2s forwards;
+}
+@keyframes slideleft{
+    0%{
+        opacity: 0;
+        transform: translateX(20%);
+    }
+    100%{
+        opacity: 1;
+        translate: none;
+    }
+}
+
+.slideright{
+    opacity: 0;
+    animation: slideright 2s forwards;
+}
+@keyframes slideright{
+    0%{
+        opacity: 0;
+        transform: translateX(-20%);
+    }
+    100%{
+        opacity: 1;
+        translate: none;
+    }
+}
+
 
 .circle{
     height: 24px;
@@ -448,4 +488,244 @@
     right: 0;
     position: fixed;
     z-index: -1;
+}
+
+#skills1{
+    scale: 0.8;
+    position: relative;
+    bottom: 15%;
+}
+
+#card1{
+    animation: rotate1 6s linear infinite;
+}
+#card2{
+    animation: rotate2 6s linear infinite;
+}
+#card3{
+    animation: rotate3 6s linear infinite;
+}
+#Hand{
+    animation: handmove 2s linear infinite;
+    transform-origin: 5%;
+}
+#head{
+    animation: headmove 2s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes rotate1{
+    0%{
+        transform: translateX(0%,)
+    }
+    10%{
+        transform: translate(0%,0%)
+    }
+    33%{
+        transform: translate(-26%,-16%)
+    }
+    43%{
+        transform: translate(-26%,-16%)
+    }
+    66%{
+        transform: translate(0%,-30%)
+    }
+    76%{
+        transform: translate(0%,-30%)
+    }
+    100%{
+        transform: translateX(0%)
+    }
+}
+@keyframes rotate2{
+    0%{
+        transform: translateX(0%)
+    }
+    10%{
+        transform: translate(0%,0%)
+    }
+    33%{
+        transform: translate(27%,-15%)
+    }
+    43%{
+        transform: translate(27%,-15%)
+    }
+    66%{
+        transform: translate(27%,15%)
+    }
+    76%{
+        transform: translate(27%,15%)
+    }
+    100%{
+        transform: translateX(0%)
+    }
+}
+@keyframes rotate3{
+    0%{
+        transform: translateX(0%)
+    }
+    10%{
+        transform: translate(0%,0%)
+    }
+    33%{
+        transform: translate(0%,30%)
+    }
+    43%{
+        transform: translate(0%,30%)
+    }
+    66%{
+        transform: translate(-27%,15%)
+    }
+    76%{
+        transform: translate(-27%,15%)
+    }
+    100%{
+        transform: translateX(0%)
+    }
+}
+@keyframes handmove{
+    0%{
+        transform: rotate(0deg)
+    }
+    50%{
+        transform: rotate(5deg)
+    }
+    100%{
+        transform: rotate(0deg)
+    }
+}
+@keyframes headmove{
+    0%{
+        transform: rotate(0deg)
+    }
+    50%{
+        transform: rotate(-10deg)
+    }
+    100%{
+        transform: rotate(0deg)
+    }
+}
+
+#skills2{
+    scale: 0.8;
+    position: relative;
+    right: 13%;
+    opacity: 0;
+}
+
+.hidden{
+    display: none;
+}
+.css3,.html,.vscode,.github,.javascript,.c,.python,.bootstrap,.oracle,.jquery,.git{
+    transform-origin: center;
+    transform-box: fill-box;
+}
+.css3{
+    animation: css3 2s ease-in-out;
+}
+.html{
+    animation: css3 2s ease-in-out;
+}
+.javascript{
+    animation: css3 2s ease-in-out;
+}
+.github{
+    animation: css3 2s ease-in-out;
+}
+.vscode{
+    animation: css3 2s ease-in-out;
+}
+.c{
+    animation: css3 2s ease-in-out;
+}
+.python{
+    animation: css3 2s ease-in-out;
+}
+.bootstrap{
+    animation: css3 2s ease-in-out;
+}
+.oracle{
+    animation: oracle 2s ease-in-out;
+}
+.jquery{
+    animation: oracle 2s ease-in-out;
+}
+.git{
+    animation: oracle 2s ease-in-out;
+}
+@keyframes css3{
+    0% {
+        opacity: 0;
+      }
+      40%{
+        opacity: 1;
+        transform: translate(1400%,-1000%) scale(3);
+      }
+      60%{
+        opacity: 1;
+        transform: translate(1400%,-1000%) scale(3);
+      }
+      100% {
+        opacity: 1;
+      }
+}
+@keyframes oracle{
+    0% {
+        opacity: 0;
+      }
+      40%{
+        opacity: 1;
+        transform: translate(800%,-1000%) scale(3);
+      }
+      60%{
+        opacity: 1;
+        transform: translate(800%,-1000%) scale(3);
+      }
+      100% {
+        opacity: 1;
+      }
+}
+
+#hand2{
+    animation: movement 2s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+@keyframes movement{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@media (max-device-width: 800px){
+    html{
+        overflow-x: hidden;
+    }
+    #skills2{
+        scale: 0.5;
+        right: 70%;
+    }
+    #skills1{
+        scale: 0.5;
+        right: 50%;
+    }
+    #contact-me h1{
+        left: 30%;
+    }
+    .circle{
+        opacity: 0;
+    }
+    .caption{
+        font-size: 1.5rem;
+    }
+    #Image_1{
+        position: relative;
+        right: 12%;
+    }
 }

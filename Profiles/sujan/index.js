@@ -34,6 +34,32 @@ window.addEventListener('scroll', () => {
     });
 });
 
+const sliding2 = document.querySelectorAll('.profile-pic');
+window.addEventListener('scroll', () => {
+    sliding2.forEach(slideup => {
+        if (slideup.getBoundingClientRect().top < (window.innerHeight/4*3)) {
+            slideup.classList.add('slideright');
+        }
+    });
+});
+
+const sliding3 = document.querySelectorAll('.sk1');
+window.addEventListener('scroll', () => {
+    sliding3.forEach(slideup => {
+        if (slideup.getBoundingClientRect().top < (window.innerHeight/4*3)) {
+            slideup.classList.add('slideleft');
+        }
+    });
+});
+const sliding4 = document.querySelectorAll('.sk2');
+window.addEventListener('scroll', () => {
+    sliding4.forEach(slideup => {
+        if (slideup.getBoundingClientRect().top < (window.innerHeight/4*3)) {
+            slideup.classList.add('slideleft');
+        }
+    });
+});
+
 jQuery(document).ready(function($) {
       var alterClass = function() {
         var ww = document.body.clientWidth;
@@ -42,6 +68,9 @@ jQuery(document).ready(function($) {
         } 
         if (ww < 992) {
             $('.sk').addClass('slideup');
+            $('.sk1').addClass('slideleft');
+            $('.sk2').addClass('slideleft');
+            $('.profile-pic').addClass('slideright');
           }
       };
       $(window).resize(function(){
@@ -54,21 +83,10 @@ jQuery(document).ready(function($) {
 const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
 
-// const colors = [
-//   "#08fdd8",
-//   "#00fade",
-//   "#00f8e3",
-//   "#00f5e8",
-//   "#00f2ec",
-//   "#00eff0",
-//   "#00ecf3",
-//   "#0ee9f5",
-// ];
 
 circles.forEach(function (circle, index) {
   circle.x = 0;
   circle.y = 0;
-//   circle.style.backgroundColor = colors[index % colors.length];
 });
 
 window.addEventListener("mousemove", function(e){
@@ -100,3 +118,47 @@ function animateCircles() {
 }
 
 animateCircles();
+
+var html = document.querySelector('.html');
+var css = document.querySelector('.css3');
+var javascript = document.querySelector('.javascript');
+var git = document.querySelector('.git');
+var bootstrap = document.querySelector('.bootstrap');
+var github = document.querySelector('.github');
+var c = document.querySelector('.c');
+var python = document.querySelector('.python');
+var oracle = document.querySelector('.oracle');
+var jquery = document.querySelector('.jquery');
+var vscode = document.querySelector('.vscode');
+
+
+
+    var elems = [css, html, javascript, git, github, vscode, c, python, oracle, bootstrap, jquery];
+
+    var counter = 0;
+
+    function removeClass () {
+
+        if (counter < elems.length) {
+            elems[counter].classList.remove('hidden');
+            counter++;
+            setTimeout(removeClass, 1300)
+        } else {
+           addClass();
+        }
+    }
+
+    function addClass () {
+      for(var i = 0; i < elems.length; i++) {
+        elems[i].classList.add('hidden');
+      }
+    }
+
+removeClass();
+
+setInterval(function(){
+  
+  counter = 0;
+  removeClass();
+  
+}, 14700)
