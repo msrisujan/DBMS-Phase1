@@ -6,6 +6,7 @@
 
 body{
   background-color:#0c0c0c;
+  overflow-x: hidden;
 }
 .navbar{
   display:flex;
@@ -527,7 +528,7 @@ top:-100px;
 left:0;
 width:100%;
 height:100px;
-background:rgb(0, 0, 0) url(/Profiles/sucheta/sucheta_wave.png);
+background:rgb(0, 0, 0) url(sucheta_wave.png);
 background-size:1000px 100px;
 }
 
@@ -578,4 +579,67 @@ footer .wave#wave4{
     background-position-x: 1000px;
   }
 
+}
+
+.circle{
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: #08fdd8;
+  top: 0;
+  right: 0;
+  position: fixed;
+  z-index: -1;
+}
+.sk{
+  opacity: 0;
+}
+.sk1{
+  opacity: 0;
+}
+.sk2{
+  opacity: 0;
+}
+.slideup{
+  opacity: 0;
+  animation: slideup 2s forwards;
+}
+@keyframes slideup{
+  0%{
+      opacity: 0;
+      translate: 0 40px;
+  }
+  100%{
+      opacity: 1;
+      translate: none;
+  }
+}
+.slideleft{
+  opacity: 0;
+  animation: slideleft 2s forwards;
+}
+@keyframes slideleft{
+  0%{
+      opacity: 0;
+      transform: translateX(20%);
+  }
+  100%{
+      opacity: 1;
+      translate: none;
+  }
+}
+
+.slideright{
+  opacity: 0;
+  animation: slideright 2s forwards;
+}
+@keyframes slideright{
+  0%{
+      opacity: 0;
+      transform: translateX(-20%);
+  }
+  100%{
+      opacity: 1;
+      translate: none;
+  }
 }
